@@ -4,14 +4,27 @@
 
     <meta charset="UTF-8">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
 
 </head>
 <body>
 <h1>{{ title }}</h1>
 <div class="wrapper">
-{% block menu %}
 
+{% block menu %}
+<header class="header">
+
+    <ul class="Main_menu">
+        <li><a href="#">Main</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Registration</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Create</a></li>
+        <li><a href="#">Exit</a></li>
+    </ul>
+
+</header>
 {% endblock menu %}
 
 
